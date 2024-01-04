@@ -29,7 +29,7 @@ const validateForm = () => {
   };
 
   let showError = (id, message) => {
-    const errorMsg = document.getElementById(id);
+    let errorMsg = document.getElementById(id);
     errorMsg.style.color = "red";
     errorMsg.innerHTML = message;
   };

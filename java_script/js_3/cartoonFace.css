@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .face {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffd699; /* Skin color */
+    position: relative;
+  }
+  
+  .eye {
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* White color for eyes */
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+  }
+  
+  .left-eye {
+    left: 20px;
+  }
+  
+  .right-eye {
+    right: 20px;
+  }
+  
+  .mouth {
+    width: 40px;
+    height: 20px;
+    background-color: #ff6666; /* Red color for mouth */
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    transform: rotate(180deg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding a shadow to the mouth */
+  }
+  
