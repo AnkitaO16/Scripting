@@ -1,0 +1,220 @@
+body {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #ffcc00;
+  /* overflow-x: hidden; */
+}
+
+#formLogin {
+  padding: 26px 18px 18px 18px;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+    width: 313px;
+    background: #fff;
+    /* height: 490px; */
+    border-radius: 38px;
+    margin: 135px 150px;
+    max-height: max-content;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.head img {
+  height: 36px;
+  margin: -10px 0;
+  margin: 5px 0;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  background: none;
+}
+
+.head img::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -12px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 12%;
+  background: #f17d80;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input {
+  width: 100px;
+  padding: 10px;
+  font-size: 12px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 30px !important;
+  border: 2px solid #ffcc00;
+}
+
+#firstName {
+  margin: 0 0px !important;
+  width: 111px;
+}
+#lastName {
+    margin: 0 -11px !important;
+    width: 111px;
+}
+
+#userId {
+    margin: 15px 0px !important;
+    width: 240px;
+}
+#eMail {
+    margin: 0 0px !important;
+    width: 239px;
+}
+
+.userClass ::before {
+  content: "\1F464"; /* Unicode character for a generic user icon */
+  margin-right: 5px;
+}
+
+/* .margin-b {
+  margin-bottom: -2rem;
+} */
+#passWord {
+    margin: 15px 0 !important;
+    width: 96px;
+}
+#confirmPassword {
+    margin: 15px -24px !important;
+    width: 121px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #ef0f0b;
+  border-color: #f21c18;
+  font-size: 20px;
+  margin: 15px 48px;
+  width: 153px;
+  height: 32px;
+  text-align: center;
+  padding: 0px;
+  border-radius: 20px;
+}
+hr {
+  border: 2px dashed lightgray;
+  transform: scale(1.5) rotate(90deg);
+  margin: -348px 341px !important;
+  width: 500px;
+}
+
+.margin-t {
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin: 0 -125px;
+    margin-top: 1px\9;
+    line-height: normal;
+    height: 19px !important;
+}
+
+.checkPara {
+    margin: -25px -49px !important;
+    width: 200px;
+}
+/* .mt-box {
+  margin: -31px -116px 0 127px;
+} */
+
+#displayBox {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  max-height: max-content;
+}
+
+.mt-check {
+  margin: -24px -27px 7px 100px;
+}
+
+.formLogin {
+    /* display: flex; */
+    float: right;
+    margin: 148px -373px !important;
+}
+h2 {
+    font-size: 28px;
+    color: #fff;
+    margin: 0px 72px;
+}
+.im-logo img {
+    height: 46px;
+    margin: 20px 95px;
+}
+
+input#logEmail {
+    margin: 0px 25px;
+    width: 200px;
+    background: #fff;
+    border: 2px solid #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+#logPass {
+    margin: 16px 6px 2px 26px;
+    width: 200px;
+    background: #fff;
+    border: 2px solid #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.btLog button{
+    margin: 355px 754px !important;
+}
+
+.popUp {
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    padding: 15px !important;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 46px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-height: max-content;
+    transition: transform 0.4s, top 0.5s;
+    margin: 0 25px 0 33px;
+    height: 52%;
+    z-index: 1;
+}
+
+#popupPara{
+    display: block;
+}
+
+.openPop{
+    visibility: visible !important;
+    top: 63% !important;
+    transform: translate(-50%, -50%) scale(1) !important;
+}

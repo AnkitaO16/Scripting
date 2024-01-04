@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="userform">
+        <label for="username">User Name</label>
+        <input type="text" name="uname">
+        <button onclick="printUserByName()">Click Me</button>
+    </form>
+    <script>
+        let printUserByName = () =>{
+            let btnClickName = document.userform.uname.value;
+        alert("Hello" + "" + btnClickName);
+    } 
+    </script>
+</body>
+</html>
