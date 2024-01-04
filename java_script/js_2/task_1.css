@@ -198,23 +198,33 @@ input#logEmail {
     padding: 15px !important;
     transform: translate(-50%, -50%) scale(1);
     padding: 46px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 6px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-height: max-content;
     transition: transform 0.4s, top 0.5s;
     margin: 0 25px 0 33px;
-    height: 52%;
+    height: 67%;
     z-index: 1;
+    justify-content: center;
+}
+
+.popUp h2{
+  text-align: center;
+  color: green;
 }
 
 #popupPara{
     display: block;
+    padding: 10px 0px 10px 20px;
 }
 
-.openPop{
-    visibility: visible !important;
-    top: 63% !important;
-    transform: translate(-50%, -50%) scale(1) !important;
+#closeBtn{
+  color: #000;
+  width: 50px;
+  background: lime;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  text-align: center;
 }

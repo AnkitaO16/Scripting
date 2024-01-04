@@ -24,7 +24,8 @@ const validateForm = () => {
     popUpP.style.visibility = "visible";
     let displayFormData = document.getElementById("popupPara");
     displayFormData.innerHTML = totalData;
-    displayFormData.style.color="green"
+    displayFormData.style.color="green";
+    // displayFormData.style.maxHeight="max-content"
   };
 
   let showError = (id, message) => {
