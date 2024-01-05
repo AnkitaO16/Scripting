@@ -1,6 +1,7 @@
 
 let popUpP = document.getElementById('popUp');
-popUpP.style.visibility = "hidden";
+popUpP.style.display="none";
+// popUpP.style.visibility = "visible";
 
 const validateForm = () => {
   // Get the form element
@@ -21,11 +22,11 @@ const validateForm = () => {
     -> Password: ${passWord}`;
 
   let openPopup = () => {
-    popUpP.style.visibility = "visible";
+    popUpP.style.display = "block";
     let displayFormData = document.getElementById("popupPara");
     displayFormData.innerHTML = totalData;
     displayFormData.style.color="green";
-    // displayFormData.style.maxHeight="max-content"
+    displayFormData.style.maxHeight="max-content"
   };
 
   let showError = (id, message) => {
@@ -55,6 +56,6 @@ const validateForm = () => {
 
 let closePopup = () =>{
   let popUpP = document.getElementById('popUp');
-  popUpP.style.visibility= "hidden";
+  popUpP.style.display= "none";
   location.reload();
 }

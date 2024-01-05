@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  border: 1px solid black;
+  flex-wrap: wrap;
+}
+.container div{
+  width: 100px;
+  height: 100px;
+  background: beige;
+  margin: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* how to make text within div center? */

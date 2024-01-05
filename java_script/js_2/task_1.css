@@ -216,17 +216,16 @@ input#logEmail {
     position: absolute;
     top: 60%;
     left: 48%;
-    padding: 15px !important;
+    padding: 46px !important;
     transform: translate(-50%, -50%) scale(1);
-    padding: 46px;
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 6px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-height: max-content;
+    min-height: 20%;
     transition: transform 0.4s, top 0.5s;
     margin: 0 25px 0 33px;
-    height: 80%;
+    height: auto;
     z-index: 1;
     justify-content: center;
 }
