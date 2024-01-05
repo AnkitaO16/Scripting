@@ -1,15 +1,31 @@
-.container{
+/* by below code will operate div through parent container */
+
+.container1{
   display: flex;
   border: 1px solid black;
   flex-wrap: wrap;
 }
-.container div{
+.container1 div{
   width: 100px;
   height: 100px;
-  background: beige;
   margin: 5px;
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray; 
 }
 
-/* how to make text within div center? */
+
+/* making one box in the center and making text with box to be in center */
+.container2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid gray; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,63 @@
+.waveContainer {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #0078d4;
+  color: #0078d4;
+}
+
+a{
+  text-decoration: none;
+  color: #0078d4;
+  font-size: 20px;
+  padding: 15px 30px;
+  position: relative;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: calc(100% + 22px);
+  left: 0;
+  background: rgb(0 94 162);
+  transition: all 0.5ms;
+}
+
+.wave::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 22px;
+  background-image: url(images/wavve-new-removebg-preview.png);
+  top: -22px;
+  animation: wavy 0.5s linear infinite;
+}
+
+@keyframes wavy {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 122px;
+  }
+}
+
+a:hover .wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0 94 162);
+    transition: all 1s;
+}
+
+a:hover {
+  color: black;
+}
