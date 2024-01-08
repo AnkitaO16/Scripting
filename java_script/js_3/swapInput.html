@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Swap Input Box</title>
 </head>
+
 <body>
+    <div class="row">
+        <h1 id="result">This is Heading</h1><br />
+        <p id="paraSwap">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </div>
     <div>
-        <input type="text" name="firstBox" id="firstBox" />
-        <input type="text" name="setFirstBox" id="setFirstBox"/>
+        <input type="text" name="firstName" id="firstName" />
+        <input type="text" name="secondName" id="secondName" />
+        <textarea name="textarea" id="textBox" cols="20" rows="5"></textarea>
         <button type="button" onclick="setBox()">Click</button>
     </div>
+    <div>
+        <iframe src="" frameborder="10" width="900" id="iframeData" height="300"></iframe>
+        <a href="" id="anchorTag">check</a>
+    </div>
+    
     <script>
-        let setBox = () =>{
-            let firstBox = document.querySelector('#setFirstBox');
-            let secondBox = document.querySelector('#firstBox');
+        function setBox() {
+            let firstBox = document.querySelector('#firstName');
+            let secondBox = document.querySelector('#secondName');
+            let txtBox = document.querySelector('#textBox');
+            let setTxtBox = document.querySelector('#paraSwap');
+            let boxIframe = document.querySelector('#iframeData');
+            let tagA = document.querySelector("#anchorTag");
+            // let urlIframe = "https://www.lipsum.com/"
+             txtBox.value= setTxtBox.innerHTML;
             secondBox.value = firstBox.value;
-    
-            // let boxTwo = document.querySelector('#setFirstBox').value ;
-            // console.log(boxOne , boxTwo);  
-            // console.log(boxTwo = boxOne);
-    
+
+            boxIframe.src ="https://www.lipsum.com/";
+            tagA.href = "https://www.lipsum.com/";
+            tagA.target = "_blank"
         }
     </script>
 </body>
+
 </html>

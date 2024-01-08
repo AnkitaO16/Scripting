@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to preselect gender By name prefix</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <form action="">
+                    <select name="gender" id="genderSelect"><option value="select">Select</option>
+                        <option value="male">He</option>
+                        <option value="female">She</option>
+                    </select><br><br>
+                    <input type="text" name="firstName" id="firstName"><br><br>
+                    <label for="male">Male</label>
+                   <input type="radio" name="Male" id="maleRadio" /><br><br>
+                   <label for="female">Female</label>
+                   <input type="radio" name="Female" id="femaleRadio" /><br><br>
+                   <button type="button" onclick="setRadioBtn()">Click</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        let setRadioBtn = () => {
+        const firstNameInput = document.querySelector("#firstName");
+        const maleRadioButton = document.getElementById("maleRadio");
+        const femaleRadioButton = document.getElementById("femaleRadio");
+        const selectGender = document.querySelector('#genderSelect');
+        // Function that gets the user's input at title and sets the gender
+        if(selectGender.value == "male"){
+            maleRadioButton.checked = true;
+        }else if(selectGender.value== "female"){
+            femaleRadioButton.checked = true;
+        }
+    }
+    </script>
+</body>
+
+</html>
