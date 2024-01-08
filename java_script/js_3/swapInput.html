@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="firstBox" id="firstBox" />
+        <input type="text" name="setFirstBox" id="setFirstBox"/>
+        <button type="button" onclick="setBox()">Click</button>
+    </div>
+    <script>
+        let setBox = () =>{
+            let firstBox = document.querySelector('#setFirstBox');
+            let secondBox = document.querySelector('#firstBox');
+            secondBox.value = firstBox.value;
+    
+            // let boxTwo = document.querySelector('#setFirstBox').value ;
+            // console.log(boxOne , boxTwo);  
+            // console.log(boxTwo = boxOne);
+    
+        }
+    </script>
+</body>
+</html>

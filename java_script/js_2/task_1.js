@@ -1,8 +1,10 @@
-
+// This will hide the popup box
 let popUpP = document.getElementById('popUp');
 popUpP.style.display="none";
 // popUpP.style.visibility = "visible";
 
+
+//this is for validating register form data
 const validateForm = () => {
   // Get the form element
   let firstName = document.getElementById('firstName').value;
@@ -55,7 +57,44 @@ const validateForm = () => {
 };
 
 let closePopup = () =>{
+  saveFormData();
   let popUpP = document.getElementById('popUp');
   popUpP.style.display= "none";
   location.reload();
 }
+
+const saveFormData = () => {
+  // Create an object with form data
+  const formData = {
+    firstName: document.getElementById('firstName').value,
+    lastName: document.getElementById('lastName').value,
+    userId: document.getElementById('userId').value,
+    eMail: document.getElementById('eMail').value,
+    passWord: document.getElementById('passWord').value,
+    confirmPassword: document.getElementById('confirmPassword').value,
+  };
+
+  // Convert the object to a JSON string
+  const jsonData = JSON.stringify(formData, null, 2);
+
+  // Save the JSON data in local storage with a key 'formData'
+  localStorage.setItem('formData', jsonData);
+};
+
+
+// let loginForm =() =>{
+//   let logUser = document.getElementById('logEmail').value;
+//   let logPass = document.getElementById('logPass').value;
+
+//   let displayError = (id, message) =>{
+//     let errorAtField = document.getElementById('id');
+//     errorAtFiels.style.color= "red";
+//     errorAtField.textContent = message;
+//   }
+
+
+//   if(logUser === ""){
+//     displayError('errorMsg4', 'Please enter email');
+//     // alert("Please enter your Email");
+//   }
+// }
