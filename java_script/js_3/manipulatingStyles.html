@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Manipulating Styles</title>
+</head>
+<body>
+<!-- Create a function that changes the background color of a given element to a random color each time it is called. -->
+<div id="randomStyle">
+    <p>I have random bg colors.</p>
+    <button type="button" onclick="randomStyleChange()">Click to change</button>
+</div>
+<script>
+   let randomStyleChange = () => { // Get the element with an ID of "randomStyle".
+   let myElement = document.querySelector('#randomStyle'); 
+   let randomColor = getRandomColor();
+   myElement.style.backgroundColor = randomColor;
+   }
+   let getRandomColor = () =>{
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for(let i=0; i<6; i++){
+        color = color + letters[Math.floor(Math.random()*16)];
+    }
+    return color;
+   }
+
+// let randomStyleChange = () => { // Get the element with an ID of "randomStyle".
+//       let myElement = document.querySelector('#randomStyle'); 
+//       let randomColor = getRandomColor();  
+//       myElement.style.backgroundColor = randomColor;
+//     }
+//     let getRandomColor = () => {
+//       let letters = '0123456789ABCDEF';
+//       let color = '#';
+//       for (let i = 0; i < 6; i++) {
+//         color = color + letters[Math.floor(Math.random() * 16)];
+//       }
+//       return color;
+//     }
+
+</script>
+</body>
+</html>

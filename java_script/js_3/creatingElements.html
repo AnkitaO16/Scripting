@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Creating Elements </title>
+</head>
+
+<body>
+    <!-- Create a new div element dynamically using JavaScript, set its text content to "Dynamic Element," and append it to the body of the document. -->
+    <section>
+        <div class="container">
+            <h1>Creating HTML elements using JavaScript:</h1><br />
+        </div>
+    </section>
+    <script>
+        // Method 1 - Using the createElement() method
+         const para = document.createElement("p");
+         para.textContent = "This is a paragraph created by using createElement() method and append by appendChild() method.";
+         // Way -1  Appending the element to the body of the web page, this will add in the end of body
+        //  document.body.appendChild(para);
+        //  console.log(para);
+ 
+         // way -2 Appending the element to within the class of the web page this will add within container
+         let setContainer = document.querySelector('.container');
+         setContainer.appendChild(para);
+         console.log(para);
+
+        /*// Method 2 - Using innerHTML property
+        let createPara = document.createElement('p');
+        createPara.innerHTML = "Heading created using innerHTML Property";
+        let divSelect = document.querySelector('.container');
+      
+        divSelect.appendChild(createPara);
+        console.log(divSelect);*/
+
+
+       /* Ask to Sir - Using DocumentFragment
+        */
+    </script>
+
+    </script>
+</body>
+
+</html>
