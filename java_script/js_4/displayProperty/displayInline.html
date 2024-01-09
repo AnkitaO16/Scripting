@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Inline</title>
+    <style>
+      
+        .container div{
+           display: inline;/* This makes the container elements behave like text within a sentence */
+            margin: 5px;     /* Adds space around each element to make them visible */
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 3px solid black;
+        }
+        .container div:nth-child(1){
+            background: rgb(181, 235, 181);
+        }
+        .container div:nth-child(2){
+            background: rgb(235, 245, 129);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="one">one</div>
+            <div class="two">two</div>
+        </div>
+    </section>
+</body>
+
+</html>

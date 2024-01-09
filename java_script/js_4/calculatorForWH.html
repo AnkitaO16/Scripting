@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>Box Model Calculator</h1> Use this page to determine the total width and height of your element. Enter in the Width, Height,Border, Margin and Padding values into the textbox below, click the 'Calculate total width and height value' button and the total width and height value
+        will appear below
+      </p>
+      <div class="row">
+        <div class="col-sm-12">
+          <form method="Get">
+            <div class="form-group col-sm-2">
+              <label for="Width">What is the Width value?</label>
+              <input type="text" class="form-control " id="txtWidth" aria- placeholder="Enter the Width value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Height">What is the Height value?</label>
+              <input type="text" class="form-control" id="txtHeight" aria- placeholder="Enter the Height value">
+            </div>
+            <!-- Border -->
+            <div class="form-group col-sm-2">
+              <label for="Border-Left">What is the Border-Left value?</label>
+              <input type="text" class="form-control" id="txtBorderLeft" aria- placeholder="Enter the Border-Left value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Border-Right">What is the Border-Right value?</label>
+              <input type="text" class="form-control" id="txtBorderRight" aria- placeholder="Enter the Border-Right value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Border-Top">What is the Border-Top value?</label>
+              <input type="text" class="form-control" id="txtBorderTop" aria- placeholder="Enter the Border-Top value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Border-Bottom">What is the Border-Bottom value?</label>
+              <input type="text" class="form-control" id="txtBorderBottom" aria- placeholder="Enter the Border-Bottom value">
+            </div>
+            <!-- Margin -->
+            <div class="form-group col-sm-2">
+              <label for="Margin-Left">What is the Margin-Left value?</label>
+              <input type="text" class="form-control" id="txtMarginLeft" aria- placeholder="Enter the Margin-Left value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Margin-Right">What is the Margin-Right value?</label>
+              <input type="text" class="form-control" id="txtMarginRight" aria- placeholder="Enter the Margin-Right value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Margin-Top">What is the Margin-Top value?</label>
+              <input type="text" class="form-control" id="txtMarginTop" aria- placeholder="Enter the Margin-Top value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Margin-Bottom">What is the Margin-Bottom value?</label>
+              <input type="text" class="form-control" id="txtMarginBottom" aria- placeholder="Enter the Margin-Bottom value">
+            </div>
+            <!-- Padding -->
+            <div class="form-group col-sm-2">
+              <label for="Padding-Left">What is the Padding-Left value?</label>
+              <input type="text" class="form-control" id="txtPaddingLeft" aria- placeholder="Enter the Padding-Left value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Padding-Right">What is the Padding-Right value?</label>
+              <input type="text" class="form-control" id="txtPaddingRight" aria- placeholder="Enter the Padding-Right value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Padding-Top">What is the Padding-Top value?</label>
+              <input type="text" class="form-control" id="txtPaddingTop" aria- placeholder="Enter the Padding-Top value">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="Padding-Bottom">What is the Padding-Bottom value?</label>
+              <input type="text" class="form-control" id="txtPaddingBottom" aria- placeholder="Enter the Padding-Bottom value">
+            </div>
+      
+            <div class="col-sm-12">
+              <button type="button" onclick="Calculate();return false" class="btn btn-primary">Calculate total width and height value</button></div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <table class="table table-responsive">
+          <tr>
+            <th>Width</th>
+            <th>+</th>
+            <th>Border-Left</th>
+            <th>+</th>
+            <th>Border-Rightt</th>
+            <th>+</th>
+            <th>Margin-Left</th>
+            <th>+</th>
+            <th>Margin-Rightft</th>
+            <th>+</th>
+            <th>Padding-Left</th>
+            <th>+</th>
+            <th>Padding-Right</th>
+            <th>=</th>
+            <th>Total Width
+          </tr>
+          <thead>
+          <tbody>
+            <tr>
+              <td><span id="spWidth"></span></td>
+              <td></td>
+              <td><span id="spBorderLeft"></span></td>
+              <td></td>
+              <td><span id="spBorderRight"></span></td>
+              <td></td>
+              <td><span id="spMarginLeft"></span></td>
+              <td></td>
+              <td><span id="spMarginRight"></span></td>
+              <td></td>
+              <td><span id="spPaddingLeft"></span></td>
+              <td></td>
+              <td><span id="spPaddingRight"></span></td>
+              <td></td>
+              <td><span id="spTotalWidth"></span></td>
+            </tr>
+          </tbody>
+          </thead>
+        </table>
+        <table class="table table-responsive">
+          <tr>      
+            <th>Height</th>
+            <th>+</th>
+            <th>Border-Top</th>
+            <th>+</th>
+            <th>Border-Bottom</th>
+            <th>+</th>
+            <th>Margin-Top</th>
+            <th>+</th>
+            <th>Margin-Bottom</th>
+            <th>+</th>
+            <th>Padding-Top</th>
+            <th>+</th>
+            <th>Padding-Bottom</th>
+            <th>=</th>
+            <th>Total Height</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td><span id="spHeight"></span></td>
+              <td></td>
+              <td><span id="spBorderTop"></span></td>
+              <td></td>
+              <td><span id="spBorderBottom"></span></td>
+              <td></td>
+              <td><span id="spMarginTop"></span></td>
+              <td></td>
+              <td><span id="spMarginBottom"></span></td>
+              <td></td>
+              <td><span id="spPaddingTop"></span></td>
+              <td></td>
+              <td><span id="spPaddingBottom"></span></td>
+              <td></td>
+              <td><span id="spTotalHeight"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <script src="calculatorForWH.js"></script>
+</body>
+</html>

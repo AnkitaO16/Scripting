@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display inline block</title>
+    <style>
+        .container div{
+            display: inline-block; /* Create a container for the elements */
+            }
+        .container div:nth-child(1){
+            background: aliceblue;
+            width: 350px;         /* Set a fixed width for the container to demonstrate how it affects  */
+            height: 350px;        /* Set a fixed width for the container to demonstrate how it affects */
+        }
+        .container div:nth-child(2){
+            background: aliceblue;
+            width: 350px;         /* Set a fixed width for the container to demonstrate how it affects  */
+            height: 350px;        /* Set a fixed width for the container to demonstrate how it affects */
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <section>
+            <div class="container">
+                <div class="one">one</div>
+                <div class="two">two</div>
+            </div>
+        </section>
+    </body>
+</body>
+</html>
