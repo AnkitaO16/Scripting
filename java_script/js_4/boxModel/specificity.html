@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* inline - 0, id-0, class-0, element- 0 */
+
+        /* #id_1 a {
+            background: red;
+            color: black;
+        }  */
+        /*0 1 0 1  fifth element*/
+
+        /* #id_1 .class_1 a {
+            background: rgb(194, 194, 211);
+        } */
+        /* 0 1 1 1 fourth element*/
+
+        #id_1 .class_1 .btn {
+            background: blue;
+            color: brown;
+        }
+        /* 0 1 2 0 */
+
+        /* .class_1 a {
+            background: green;
+            color :red
+        } */
+        /* 0 0 1 1 second element*/
+
+        /* .class_1 .btn {
+            background: yellow;
+        } */
+        /* 0 0 2 0 third element*/
+
+        /* a {
+            background: aliceblue;
+        } */
+        /* 0 0 0 1 first element*/
+    </style>
+</head>
+
+<body>
+    <div id="id_1">
+        <div class="class_1">
+            <a href="#" class="btn">click</a>
+        </div>
+    </div>
+</body>
+
+</html>
