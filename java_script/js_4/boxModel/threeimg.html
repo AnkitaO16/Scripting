@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 image overlapping</title>
+    <style>
+        #overlayedImage{
+        position:absolute;
+        z-index:-1;
+        opacity:0.5;
+        left:40px;
+        top:60px}
+        #overlayedImageTwo{
+        position:absolute;
+        z-index:-1;
+        opacity:0.5;
+        left:40px;
+        top:90px}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/images/image_1.jpg" alt="img 1" id="mainImage"/>
+        <img src="/images/image_2.jpg" alt="img 2" id="overlayedImage" />
+        <img src="/images/image_2.jpg" alt="img 2" id="overlayedImageTwo" />
+    </div>
+</body>
+</html>
